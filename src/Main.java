@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        FirePokemon charmander = new FirePokemon("Charmander");
+        System.out.println(charmander.getName() + charmander.getType());
+        charmander.attack();
     }
 }
