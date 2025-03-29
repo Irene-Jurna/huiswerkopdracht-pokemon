@@ -2,19 +2,19 @@ package pokemon;
 
 public abstract class Pokemon {
     private String name;
-    private String type;
+    private PokemonType type;
     private int healthPoints;
     private int level;
     private double weight;
     private double height;
     private String sound;
 
-    public Pokemon(String name, String type) {
+    public Pokemon(String name, PokemonType type) {
         this.name = name;
         this.type = type;
     }
 
-    public Pokemon(String name, String type, int healthPoints, int level, double weight, double height, String sound) {
+    public Pokemon(String name, PokemonType type, int healthPoints, int level, double weight, double height, String sound) {
         this.name = name;
         this.type = type;
         this.healthPoints = healthPoints;
@@ -32,7 +32,7 @@ public abstract class Pokemon {
         this.name = name;
     }
 
-    public String getType() {
+    public PokemonType getType() {
         return type;
     }
 

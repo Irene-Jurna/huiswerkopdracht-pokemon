@@ -1,9 +1,8 @@
 package pokemon;
 
 public class FirePokemon extends Pokemon {
-    private static final String FIRE_TYPE = "fire";
     public FirePokemon(String name) {
-        super(name, FIRE_TYPE);
+        super(name, PokemonType.FIRE);
     }
 
     @Override

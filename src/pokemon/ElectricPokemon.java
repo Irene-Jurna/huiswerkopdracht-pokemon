@@ -1,10 +1,9 @@
 package pokemon;
 
 public class ElectricPokemon extends Pokemon {
-    private static final String ELECTRIC_TYPE = "electric";
 
     public ElectricPokemon(String name) {
-        super(name, ELECTRIC_TYPE);
+        super(name, PokemonType.ELECTRIC);
     }
 
     @Override

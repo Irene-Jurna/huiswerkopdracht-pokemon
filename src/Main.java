@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         FirePokemon charmander = new FirePokemon("Charmander");
-        System.out.println(charmander.getName() + charmander.getType());
+        System.out.println(charmander.getName() + " " + charmander.getType().toString().toLowerCase());
         charmander.attack();
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Welkom bij pokemon.Pokemon!\nSpeler 1, wat is je gebruikersnaam?");
+        System.out.println("Welkom bij Pokemon!\nSpeler 1, wat is je gebruikersnaam?");
         String username1 = sc.nextLine();
         User player1 = new User(username1);
 
