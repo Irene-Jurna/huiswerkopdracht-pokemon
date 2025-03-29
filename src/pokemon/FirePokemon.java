@@ -1,3 +1,5 @@
+package pokemon;
+
 public class FirePokemon extends Pokemon {
     private static final String FIRE_TYPE = "fire";
     public FirePokemon(String name) {
@@ -5,12 +7,12 @@ public class FirePokemon extends Pokemon {
     }
 
     @Override
-    void defend() {
+    public void defend() {
         System.out.println("Fire defence");
     }
 
     @Override
-    void attack() {
+    public void attack() {
         System.out.println("Fire attack!");
     }
 }

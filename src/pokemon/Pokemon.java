@@ -1,3 +1,5 @@
+package pokemon;
+
 public abstract class Pokemon {
     private String name;
     private String type;
