@@ -22,8 +22,6 @@ public class Main {
         Pokemon newPokemonPlayer2 = GameMethod.createRandomPokemon();
         player2.addPokemon(newPokemonPlayer2);
 
-        System.out.println("Test: " + player2.getPokemons());
-
         System.out.println("Gefeliciteerd met jullie pokemons! Laat de wedstrijd beginnen!");
         System.out.println(player1.getUsername() + ", kies een actie: aanvallen[A] / verdedigen[V]");
         String choicePlayer1 = sc.nextLine();

@@ -1,5 +1,6 @@
 import pokemon.Pokemon;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class User {
@@ -8,6 +9,7 @@ public class User {
 
     public User(String username) {
         this.username = username;
+        this.pokemons = new ArrayList<>();
     }
 
     public String getUsername() {
