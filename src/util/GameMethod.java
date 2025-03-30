@@ -5,11 +5,13 @@ import java.util.Random;
 import pokemon.*;
 
 public class GameMethod {
-    public static void createRandomPokemon() {
+    public static Pokemon createRandomPokemon() {
         PokemonType randomType = getRandomPokemonType();
         Pokemon randomPokemon = getRandomPokemon(randomType);
         System.out.println("Jouw pokemon type is: " + randomType + "!");
         System.out.println("Je krijgt...\n" + randomPokemon.getName() + "!");
+
+        return randomPokemon;
     }
 
     private static PokemonType getRandomPokemonType() {

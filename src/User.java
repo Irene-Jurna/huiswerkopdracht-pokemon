@@ -1,6 +1,10 @@
+import pokemon.Pokemon;
+
+import java.util.List;
+
 public class User {
     private String username;
-    private String[] pokemons;
+    private List<Pokemon> pokemons;
 
     public User(String username) {
         this.username = username;
@@ -14,11 +18,15 @@ public class User {
         this.username = username;
     }
 
-    public String[] getPokemons() {
+    public List<Pokemon> getPokemons() {
         return pokemons;
     }
 
-    public void setPokemons(String[] pokemons) {
+    public void setPokemons(List<Pokemon> pokemons) {
         this.pokemons = pokemons;
+    }
+
+    public void addPokemon(Pokemon pokemon) {
+        pokemons.add(pokemon);
     }
 }
