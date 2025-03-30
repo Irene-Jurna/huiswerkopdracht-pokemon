@@ -14,13 +14,15 @@ public class Main {
         String username2 = sc.nextLine();
         User player2 = new User(username2);
 
-        System.out.println("Het spel gaat beginnen! " + player1.getUsername());
+        System.out.println("Het spel gaat beginnen!\n" + player1.getUsername() + ":");
         Pokemon newPokemonPlayer1 = GameMethod.createRandomPokemon();
         player1.addPokemon(newPokemonPlayer1);
+        System.out.println(player1.getPokemons().get(0).getName() + " zegt: " + player1.getPokemons().get(0).getSound() + "\n");
 
         System.out.println(player2.getUsername() + " we gaan jouw pokemon bepalen: ");
         Pokemon newPokemonPlayer2 = GameMethod.createRandomPokemon();
         player2.addPokemon(newPokemonPlayer2);
+        System.out.println(player2.getPokemons().get(0).getName() + " zegt: " + player2.getPokemons().get(0).getSound() + "\n");
 
         System.out.println("Gefeliciteerd met jullie pokemons! Laat de wedstrijd beginnen!");
         System.out.println(player1.getUsername() + ", kies een actie: aanvallen[A] / verdedigen[V]");

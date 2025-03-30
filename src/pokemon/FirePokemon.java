@@ -1,8 +1,8 @@
 package pokemon;
 
 public class FirePokemon extends Pokemon {
-    public FirePokemon(String name) {
-        super(name, PokemonType.FIRE);
+    public FirePokemon(String name, int healthPoints, int level, double weight, double height, String sound) {
+        super(name, PokemonType.FIRE, healthPoints, level, weight, height, sound);
     }
 
     @Override
