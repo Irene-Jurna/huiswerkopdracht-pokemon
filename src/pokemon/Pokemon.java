@@ -2,7 +2,7 @@ package pokemon;
 
 public abstract class Pokemon {
     private String name;
-    private PokemonType type;
+    private final PokemonType type;
     private int healthPoints;
     private int level;
     private double weight;
@@ -32,8 +32,8 @@ public abstract class Pokemon {
         this.name = name;
     }
 
-    public PokemonType getType() {
-        return type;
+    public String getType() {
+        return type.toString().toLowerCase();
     }
 
     public int getHealthPoints() {
